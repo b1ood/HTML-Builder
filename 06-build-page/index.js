@@ -47,7 +47,7 @@ async function HTMLInterpolation(template, files, filesPath) {
       const fileContent = await fsPromises.readFile(filePath, {
         encoding: 'utf-8',
       });
-      template = template.replace(`{{${fileName}}`, fileContent);
+      template = template.replace(`{{${fileName}}}`, fileContent);
     }
   }
   return template;
